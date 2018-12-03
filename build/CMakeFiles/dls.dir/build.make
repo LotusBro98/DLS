@@ -90,6 +90,7 @@ dls_EXTERNAL_OBJECTS =
 
 libdls.so: CMakeFiles/dls.dir/src/dls.cpp.o
 libdls.so: CMakeFiles/dls.dir/build.make
+libdls.so: libsimplenet.so
 libdls.so: CMakeFiles/dls.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/Dev/DLS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libdls.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dls.dir/link.txt --verbose=$(VERBOSE)

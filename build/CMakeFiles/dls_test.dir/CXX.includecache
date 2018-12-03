@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+.././include/dls.h
+vector
+-
+simplenet/Net.h
+-
+
 .././include/simplenet/Dataset.h
 iostream
 -
@@ -34,27 +40,9 @@ Dataset.h
 cmath
 -
 
-/home/alex/Dev/DLS/src/net/Dataset.cpp
-simplenet/Dataset.h
+/home/alex/Dev/DLS/src/dls_test.cpp
+iostream
 -
-cmath
--
-
-/home/alex/Dev/DLS/src/net/Layer.cpp
-simplenet/Layer.h
--
-thread
--
-pthread.h
--
-
-/home/alex/Dev/DLS/src/net/Net.cpp
-simplenet/Net.h
--
-
-/home/alex/Dev/DLS/src/net/funcs.cpp
-cmath
--
-simplenet/funcs.h
+dls.h
 -
 

@@ -19,4 +19,10 @@ add_library(dls SHARED
 add_executable(dls_train
 	./src/dls_train.cpp)
 
-target_link_libraries( dls_train simplenet dls pthread ${OpenCV_LIBS} )
+target_link_libraries( dls simplenet pthread)# ${OpenCV_LIBS} )
+
+add_executable(dls_test
+	./src/dls_test.cpp)
+
+target_link_libraries( dls_train simplenet dls pthread)# ${OpenCV_LIBS} )
+target_link_libraries( dls_test  simplenet dls pthread)# ${OpenCV_LIBS} )

@@ -1,7 +1,8 @@
 #include <simplenet/Net.h>
 
-#include <opencv2/opencv.hpp>
+//#include <opencv2/opencv.hpp>
 
+/*
 void showDistribution(sn::Net * net, sn::Dataset * dataset = nullptr,
 		float xMin = -1, float xMax = 1, 
 		float yMin = -1, float yMax = 1, 
@@ -46,7 +47,7 @@ void showDistribution(sn::Net * net, sn::Dataset * dataset = nullptr,
 
 	cv::waitKey(1);
 }
-
+*/
 
 
 
@@ -224,13 +225,13 @@ namespace sn
 			std::cerr << Lfin << std::endl;
 			i++;
 			
-			if (this->getNIn() == 2 && this->getNOut() == 1)
-				showDistribution(this, dataset);
+		//	if (this->getNIn() == 2 && this->getNOut() == 1)
+		//		showDistribution(this, dataset);
 		}
 		while (Lfin > toLoss);
 		
-		if (this->getNIn() == 2 && this->getNOut() == 1)
-			cv::waitKey();
+	//	if (this->getNIn() == 2 && this->getNOut() == 1)
+	//		cv::waitKey();
 
 		layers[nLayers - 1]->setOut(outPrev);
 

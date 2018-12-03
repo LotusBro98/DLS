@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alex/Dev/DLS/src/dls_train.cpp" "/home/alex/Dev/DLS/build/CMakeFiles/dls_train.dir/src/dls_train.cpp.o"
+  "/home/alex/Dev/DLS/src/dls_test.cpp" "/home/alex/Dev/DLS/build/CMakeFiles/dls_test.dir/src/dls_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

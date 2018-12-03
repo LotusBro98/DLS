@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/dls_test.dir/src/dls_test.cpp.o  -o dls_test -Wl,-rpath,/home/alex/Dev/DLS/build libdls.so -lpthread libsimplenet.so 

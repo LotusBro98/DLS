@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/alex/Dev/DLS/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named dls_test
+
+# Build rule for target.
+dls_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dls_test
+.PHONY : dls_test
+
+# fast build rule for target.
+dls_test/fast:
+	$(MAKE) -f CMakeFiles/dls_test.dir/build.make CMakeFiles/dls_test.dir/build
+.PHONY : dls_test/fast
 
 #=============================================================================
 # Target rules for targets named dls_train
@@ -175,6 +188,33 @@ src/dls.s: src/dls.cpp.s
 src/dls.cpp.s:
 	$(MAKE) -f CMakeFiles/dls.dir/build.make CMakeFiles/dls.dir/src/dls.cpp.s
 .PHONY : src/dls.cpp.s
+
+src/dls_test.o: src/dls_test.cpp.o
+
+.PHONY : src/dls_test.o
+
+# target to build an object file
+src/dls_test.cpp.o:
+	$(MAKE) -f CMakeFiles/dls_test.dir/build.make CMakeFiles/dls_test.dir/src/dls_test.cpp.o
+.PHONY : src/dls_test.cpp.o
+
+src/dls_test.i: src/dls_test.cpp.i
+
+.PHONY : src/dls_test.i
+
+# target to preprocess a source file
+src/dls_test.cpp.i:
+	$(MAKE) -f CMakeFiles/dls_test.dir/build.make CMakeFiles/dls_test.dir/src/dls_test.cpp.i
+.PHONY : src/dls_test.cpp.i
+
+src/dls_test.s: src/dls_test.cpp.s
+
+.PHONY : src/dls_test.s
+
+# target to generate assembly for a file
+src/dls_test.cpp.s:
+	$(MAKE) -f CMakeFiles/dls_test.dir/build.make CMakeFiles/dls_test.dir/src/dls_test.cpp.s
+.PHONY : src/dls_test.cpp.s
 
 src/dls_train.o: src/dls_train.cpp.o
 
@@ -317,14 +357,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... dls_test"
 	@echo "... dls_train"
 	@echo "... simplenet"
 	@echo "... dls"
 	@echo "... src/dls.o"
 	@echo "... src/dls.i"
 	@echo "... src/dls.s"
+	@echo "... src/dls_test.o"
+	@echo "... src/dls_test.i"
+	@echo "... src/dls_test.s"
 	@echo "... src/dls_train.o"
 	@echo "... src/dls_train.i"
 	@echo "... src/dls_train.s"

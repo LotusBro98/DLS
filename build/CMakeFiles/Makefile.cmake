@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/dls_test.dir/DependInfo.cmake"
   "CMakeFiles/dls_train.dir/DependInfo.cmake"
   "CMakeFiles/simplenet.dir/DependInfo.cmake"
   "CMakeFiles/dls.dir/DependInfo.cmake"

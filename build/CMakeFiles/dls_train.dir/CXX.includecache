@@ -43,8 +43,6 @@ cmath
 /home/alex/Dev/DLS/src/dls_train.cpp
 cmath
 -
-opencv2/opencv.hpp
--
 dls.h
 -
 simplenet/Net.h

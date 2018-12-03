@@ -1,7 +1,12 @@
 [
 {
   "directory": "/home/alex/Dev/DLS/build",
-  "command": "/usr/bin/c++   -isystem /usr/include/opencv -I/home/alex/Dev/DLS/./include    -std=gnu++11 -o CMakeFiles/dls_train.dir/src/dls_train.cpp.o -c /home/alex/Dev/DLS/src/dls_train.cpp",
+  "command": "/usr/bin/c++   -I/usr/include/opencv -I/home/alex/Dev/DLS/./include    -std=gnu++11 -o CMakeFiles/dls_test.dir/src/dls_test.cpp.o -c /home/alex/Dev/DLS/src/dls_test.cpp",
+  "file": "/home/alex/Dev/DLS/src/dls_test.cpp"
+},
+{
+  "directory": "/home/alex/Dev/DLS/build",
+  "command": "/usr/bin/c++   -I/usr/include/opencv -I/home/alex/Dev/DLS/./include    -std=gnu++11 -o CMakeFiles/dls_train.dir/src/dls_train.cpp.o -c /home/alex/Dev/DLS/src/dls_train.cpp",
   "file": "/home/alex/Dev/DLS/src/dls_train.cpp"
 },
 {
