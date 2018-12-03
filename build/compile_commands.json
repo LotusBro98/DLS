@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/alex/Dev/DLS/build",
+  "command": "/usr/bin/c++   -isystem /usr/include/opencv -I/home/alex/Dev/DLS/./include    -std=gnu++11 -o CMakeFiles/dls_train.dir/src/dls_train.cpp.o -c /home/alex/Dev/DLS/src/dls_train.cpp",
+  "file": "/home/alex/Dev/DLS/src/dls_train.cpp"
+},
+{
+  "directory": "/home/alex/Dev/DLS/build",
+  "command": "/usr/bin/c++  -Dsimplenet_EXPORTS -I/usr/include/opencv -I/home/alex/Dev/DLS/./include  -fPIC   -std=gnu++11 -o CMakeFiles/simplenet.dir/src/net/Layer.cpp.o -c /home/alex/Dev/DLS/src/net/Layer.cpp",
+  "file": "/home/alex/Dev/DLS/src/net/Layer.cpp"
+},
+{
+  "directory": "/home/alex/Dev/DLS/build",
+  "command": "/usr/bin/c++  -Dsimplenet_EXPORTS -I/usr/include/opencv -I/home/alex/Dev/DLS/./include  -fPIC   -std=gnu++11 -o CMakeFiles/simplenet.dir/src/net/Net.cpp.o -c /home/alex/Dev/DLS/src/net/Net.cpp",
+  "file": "/home/alex/Dev/DLS/src/net/Net.cpp"
+},
+{
+  "directory": "/home/alex/Dev/DLS/build",
+  "command": "/usr/bin/c++  -Dsimplenet_EXPORTS -I/usr/include/opencv -I/home/alex/Dev/DLS/./include  -fPIC   -std=gnu++11 -o CMakeFiles/simplenet.dir/src/net/Dataset.cpp.o -c /home/alex/Dev/DLS/src/net/Dataset.cpp",
+  "file": "/home/alex/Dev/DLS/src/net/Dataset.cpp"
+},
+{
+  "directory": "/home/alex/Dev/DLS/build",
+  "command": "/usr/bin/c++  -Dsimplenet_EXPORTS -I/usr/include/opencv -I/home/alex/Dev/DLS/./include  -fPIC   -std=gnu++11 -o CMakeFiles/simplenet.dir/src/net/funcs.cpp.o -c /home/alex/Dev/DLS/src/net/funcs.cpp",
+  "file": "/home/alex/Dev/DLS/src/net/funcs.cpp"
+},
+{
+  "directory": "/home/alex/Dev/DLS/build",
+  "command": "/usr/bin/c++  -Ddls_EXPORTS -I/usr/include/opencv -I/home/alex/Dev/DLS/./include  -fPIC   -std=gnu++11 -o CMakeFiles/dls.dir/src/dls.cpp.o -c /home/alex/Dev/DLS/src/dls.cpp",
+  "file": "/home/alex/Dev/DLS/src/dls.cpp"
+}
+]

@@ -1,0 +1,5 @@
+/home/alex/Dev/DLS/build/CMakeFiles/rebuild_cache.dir
+/home/alex/Dev/DLS/build/CMakeFiles/edit_cache.dir
+/home/alex/Dev/DLS/build/CMakeFiles/dls_train.dir
+/home/alex/Dev/DLS/build/CMakeFiles/simplenet.dir
+/home/alex/Dev/DLS/build/CMakeFiles/dls.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libsimplenet.so -o libsimplenet.so CMakeFiles/simplenet.dir/src/net/Layer.cpp.o CMakeFiles/simplenet.dir/src/net/Net.cpp.o CMakeFiles/simplenet.dir/src/net/Dataset.cpp.o CMakeFiles/simplenet.dir/src/net/funcs.cpp.o 
